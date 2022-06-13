@@ -10148,17 +10148,37 @@ ul {
   padding: 0 !important;
 }
 
-.sect-5 {
-  padding: 20vh 0;
+#sect-5 {
+  padding: 15vh 0;
 }
-.sect-5 .titre {
+#sect-5 .titre {
   padding: 0 35vw;
 }
-.sect-5 .titre p {
-  font-size: 0.9rem;
+#sect-5 .titre p {
+  font-size: 1rem;
 }
-.sect-5 .quote {
+#sect-5 .quote {
   font-size: 0.8rem;
+}
+
+#sect-4 {
+  background-color: #F7F2ED;
+  padding: 15vh 0;
+}
+#sect-4 .titre {
+  padding: 0 35vw;
+}
+#sect-4 .titre p {
+  font-size: 1rem;
+}
+#sect-4 .testimonials {
+  padding: 10vh 15vw 0;
+}
+#sect-4 .testimonials img {
+  width: 50px;
+}
+#sect-4 .testimonials p {
+  font-size: 0.9rem;
 }
 
 #sect-6 {
