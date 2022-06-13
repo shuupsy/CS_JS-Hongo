@@ -10149,6 +10149,22 @@ ul {
   padding: 0 !important;
 }
 
+header {
+  background-image: url("../img/collect/one-page-slider-01.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+header nav {
+  padding: 0 10vh;
+}
+header section {
+  padding: 0 25vh;
+}
+header section div {
+  bottom: 0;
+}
+
 #sect-1 .about {
   padding: 15vh 25vh;
   font-size: 0.8rem;
@@ -10233,7 +10249,7 @@ ul {
 }
 
 #sect-7 {
-  padding: 13vh 30vh 25vh;
+  padding: 13vh 30vh 20vh;
 }
 #sect-7 p {
   font-size: 0.7rem;
