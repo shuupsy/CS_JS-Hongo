@@ -10148,6 +10148,19 @@ ul {
   padding: 0 !important;
 }
 
+.sect-5 {
+  padding: 20vh 0;
+}
+.sect-5 .titre {
+  padding: 0 35vw;
+}
+.sect-5 .titre p {
+  font-size: 0.9rem;
+}
+.sect-5 .quote {
+  font-size: 0.8rem;
+}
+
 #sect-6 {
   background-color: #F7F2ED;
 }
