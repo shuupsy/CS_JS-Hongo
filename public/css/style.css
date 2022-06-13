@@ -10142,10 +10142,16 @@ readers do not read off random characters that represent icons */
   padding: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 ul {
   padding: 0 !important;
+}
+
+#sect-1 .about {
+  padding: 15vh 25vh;
+  font-size: 0.8rem;
 }
 
 #sect-2 {
@@ -10205,11 +10211,14 @@ ul {
   align-items: space-between;
   padding: 10vh 5vh;
 }
+#sect-6 .col-3 p {
+  font-size: 0.8rem;
+}
 #sect-6 .col-5 {
   background-image: url("../img/fashion/fashion-brand-parallax-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 12vh 8vh;
+  padding: 10vh;
 }
 #sect-6 .col-5 input, #sect-6 .col-5 textarea {
   background-color: unset;
@@ -10217,10 +10226,17 @@ ul {
   border-radius: 0px;
   border-bottom: 1px solid grey;
   padding: 0;
+  font-size: 0.9rem;
+}
+#sect-6 .col-5 label {
+  font-size: 0.9rem;
 }
 
 #sect-7 {
   padding: 13vh 30vh 25vh;
+}
+#sect-7 p {
+  font-size: 0.7rem;
 }
 
 footer section {
