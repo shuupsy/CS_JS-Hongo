@@ -5,7 +5,7 @@
 1. Site à reproduire en HTML/SASS(SCSS)/Bootstrap/JS
 2. Le site doit être responsive (PC, tablette, GSM)
 3. Vous pouvez vous entraider, mais vous ne pouvez pas vous partager le code, toute copie sera considéré comme plagiat et les deux personnes rateront leur projet
-4. Date de remise : Lundi 16/06 à 17h00 sur un repo privé sous le nom de : cs23_projetjs_nom_prenom
+4. Date de remise : Jeudi 16/06 à 17h00 sur un repo privé sous le nom de : cs23_projetjs_nom_prenom
 5. Après chaque section, vous devez faire des sauvegardes 
 
 
