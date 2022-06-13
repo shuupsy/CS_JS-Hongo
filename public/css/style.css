@@ -10148,6 +10148,14 @@ ul {
   padding: 0 !important;
 }
 
+#sect-2 {
+  background-color: #F7F2ED;
+  padding: 15vh 20vh;
+}
+#sect-2 p {
+  font-size: 0.8rem;
+}
+
 #sect-5 {
   padding: 15vh 0;
 }
