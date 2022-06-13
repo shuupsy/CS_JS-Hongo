@@ -10172,8 +10172,10 @@ footer section div {
 }
 footer .ftr-2 {
   background-color: #141414;
-  padding: 0 26vh;
-  height: 6vh;
+  padding: 2.5vh 26vh 1vh;
+}
+footer .ftr-2 p {
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
