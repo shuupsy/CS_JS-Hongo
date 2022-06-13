@@ -193,7 +193,7 @@
         </section>
 
         <!-- Section 5 - Blog -->
-        <section>
+        <section class="sect-5">
             <div>
                 <h2>Latest Blog</h2>
                 <p>Lorem Ipsum is simpy dummy text of the printing and typesetting industry printing and industry.</p>
@@ -240,10 +240,10 @@
         </section>
 
         <!-- Section 6 - Adresse / Contact -->
-        <section>
-            <div><img src="public/img/collect/one-page-img-04.jpg" alt="image parfum coton"></div>
-            <div>
-                <div>
+        <section id="sect-6" class="row">
+            <div class="col-4"></div>
+            <div class="col-3 row justify-content-center align-items-center gap-5">
+                <div class="d-flex align-items-center justify-content-evenly gap-4">
                     <i class="fa-solid fa-location-dot"></i>
                     <div>
                         <h6>Address details</h6>
@@ -251,8 +251,7 @@
                         <p>Iceland, Iceland 10013.</p>
                     </div>
                 </div>
-
-                <div>
+                <div class="d-flex align-items-center justify-content-evenly gap-4">
                     <i class="fa-solid fa-envelope"></i>
                     <div>
                         <h6>Email address</h6>
@@ -260,8 +259,7 @@
                         <p>info@domain.com</p>
                     </div>
                 </div>
-
-                <div>
+                <div class="d-flex align-items-center justify-content-evenly gap-4">
                     <i class="fa-solid fa-phone-flip"></i>
                     <div>
                         <h6>Telephone number</h6>
@@ -270,24 +268,25 @@
                     </div>
                 </div>
             </div>
-            <div><img src="public/img/fashion/fashion-brand-parallax-bg.jpg" alt="image feuilles">
-                <h3>Simply fill out the form and we'll be in touch with you soon</h3>
+            <div class="col-5 text-secondary">
+                <h3 class="fs-4 text-light">Simply fill out the form and we'll be in touch with you soon!</h3>
                 <div>
                     <!-- Nom -->
-                    <label for="exampleFormControlInput1" class="form-label">Name*</label>
+                    <label for="exampleFormControlInput1" class="pt-4 form-label">Name*</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1">
                     <!-- Email -->
-                    <label for="exampleFormControlInput1" class="form-label">Email*</label>
+                    <label for="exampleFormControlInput1" class="pt-4 form-label">Email*</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1">
                     <!-- Sujet -->
-                    <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                    <label for="exampleFormControlInput1" class="pt-4 form-label">Subject</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1">
                 </div>
                 <!-- Message -->
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+                    <label for="exampleFormControlTextarea1" class="pt-4 form-label">Your Message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+                <button class="btn btn-light">SEND MESSAGE</button>
             </div>
         </section>
 

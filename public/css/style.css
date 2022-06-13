@@ -10148,6 +10148,34 @@ ul {
   padding: 0 !important;
 }
 
+#sect-6 {
+  background-color: #F7F2ED;
+}
+#sect-6 .col-4 {
+  background-image: url("../img/collect/one-page-img-04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#sect-6 .col-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8% 2%;
+}
+#sect-6 .col-5 {
+  background-image: url("../img/fashion/fashion-brand-parallax-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15vh 10vh;
+}
+#sect-6 .col-5 input, #sect-6 .col-5 textarea {
+  background-color: unset;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid grey;
+}
+
 #sect-7 {
   padding: 13vh 30vh 25vh;
 }
