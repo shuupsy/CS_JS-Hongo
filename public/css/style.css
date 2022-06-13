@@ -10150,13 +10150,13 @@ ul {
 
 footer section {
   background-color: #1E1E1E;
-  padding: 0 30vh;
+  padding: 0 26vh;
 }
 footer section .insta-pics img {
-  width: 45px;
+  width: 50px;
 }
-footer section p, footer section li {
-  font-size: 0.8rem;
+footer section p, footer section li, footer section input, footer section button {
+  font-size: 0.7rem;
 }
 footer section input, footer section button {
   background-color: #303030;
@@ -10164,9 +10164,15 @@ footer section input, footer section button {
   padding: 5px 15px;
   color: grey;
 }
+footer section h5 {
+  font-size: 0.8rem;
+}
+footer section div {
+  padding: 0 !important;
+}
 footer .ftr-2 {
   background-color: #141414;
-  padding: 0 30vh;
+  padding: 0 26vh;
   height: 6vh;
 }
 
