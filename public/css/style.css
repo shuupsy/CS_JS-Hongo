@@ -10166,11 +10166,10 @@ header #pre-main {
 header #womens {
   position: absolute;
   bottom: -7vh;
-  left: 30.3%;
+  left: 30%;
 }
 header #womens h1 {
   font-size: 9rem;
-  text-align: center;
 }
 
 .reseaux {
