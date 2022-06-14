@@ -10173,29 +10173,6 @@ header #womens h1 {
   font-size: 9rem;
 }
 
-.reseaux {
-  position: sticky;
-  top: 35%;
-  width: 3rem;
-  height: 0;
-  z-index: 9999;
-  font-size: 0.9rem;
-}
-.reseaux #follow {
-  writing-mode: vertical-lr;
-  transform: scale(-1);
-}
-
-.up {
-  position: absolute;
-  right: 1%;
-  bottom: 10%;
-  font-size: 0.9rem;
-}
-.up a {
-  transform: rotate(-90deg);
-}
-
 #sect-1 .about {
   padding: 15vh 25vh;
   font-size: 0.8rem;
@@ -10316,13 +10293,27 @@ footer .ftr-2 p {
   font-size: 0.8rem;
 }
 
-#products .boite {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-content: center;
-  gap: 10px;
-  text-align: center;
-  font-size: 0.8rem;
+.reseaux {
+  position: sticky;
+  top: 35%;
+  width: 3rem;
+  height: 0;
+  z-index: 9999;
+  font-size: 0.9rem;
+}
+.reseaux #follow {
+  writing-mode: vertical-lr;
+  transform: scale(-1);
+}
+
+.up {
+  position: absolute;
+  right: 1%;
+  bottom: 10%;
+  font-size: 0.9rem;
+}
+.up a {
+  transform: rotate(-90deg);
 }
 
 /*# sourceMappingURL=style.css.map */
