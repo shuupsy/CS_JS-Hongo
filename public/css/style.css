@@ -10159,8 +10159,10 @@ header nav {
   padding: 0 10vh;
 }
 header #pre-main {
-  padding: 0 25vh;
+  width: 25%;
   position: absolute;
+  top: 30%;
+  left: 18%;
 }
 header #womens {
   position: absolute;
