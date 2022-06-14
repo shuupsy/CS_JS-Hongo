@@ -10157,6 +10157,9 @@ header {
 header nav {
   padding: 0 10vh;
 }
+header nav .user {
+  cursor: pointer;
+}
 header #pre-main {
   width: 25%;
   position: absolute;
@@ -10323,6 +10326,14 @@ footer .ftr-2 p {
 }
 #up a {
   transform: rotate(-90deg);
+}
+
+.modal {
+  position: absolute;
+  top: 10% !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: 400px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
