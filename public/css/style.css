@@ -10174,6 +10174,19 @@ header #womens h1 {
   text-align: center;
 }
 
+.reseaux {
+  position: sticky;
+  top: 35%;
+  width: 3rem;
+  height: 0;
+  z-index: 9999;
+  font-size: 0.9rem;
+}
+.reseaux #follow {
+  writing-mode: vertical-lr;
+  transform: scale(-1);
+}
+
 #sect-1 .about {
   padding: 15vh 25vh;
   font-size: 0.8rem;
