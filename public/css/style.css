@@ -10187,6 +10187,17 @@ header #womens h1 {
   transform: scale(-1);
 }
 
+.up {
+  position: sticky;
+  bottom: 10%;
+  font-size: 0.9rem;
+  z-index: 9999;
+}
+.up p {
+  writing-mode: vertical-lr;
+  transform: scale(-1);
+}
+
 #sect-1 .about {
   padding: 15vh 25vh;
   font-size: 0.8rem;
