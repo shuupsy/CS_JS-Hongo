@@ -10160,9 +10160,11 @@ header nav {
 }
 header section {
   padding: 0 25vh;
+  position: relative;
 }
-header section div {
-  bottom: 0;
+header section .womens {
+  position: absolute;
+  top: 80%;
 }
 
 #sect-1 .about {
