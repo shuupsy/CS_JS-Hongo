@@ -10165,8 +10165,9 @@ header #pre-main {
 }
 header #womens {
   position: absolute;
-  bottom: -7vh;
-  left: 30%;
+  bottom: -7%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 header #womens h1 {
   font-size: 9rem;
@@ -10186,14 +10187,13 @@ header #womens h1 {
 }
 
 .up {
-  position: sticky;
-  bottom: 18%;
+  position: absolute;
+  right: 1%;
+  bottom: 10%;
   font-size: 0.9rem;
-  z-index: 9999;
 }
-.up p {
-  writing-mode: vertical-rl;
-  transform: scale(-1);
+.up a {
+  transform: rotate(-90deg);
 }
 
 #sect-1 .about {
@@ -10313,6 +10313,15 @@ footer .ftr-2 {
   padding: 2.5vh 26vh 1vh;
 }
 footer .ftr-2 p {
+  font-size: 0.8rem;
+}
+
+#products .boite {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
   font-size: 0.8rem;
 }
 
