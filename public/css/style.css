@@ -10306,13 +10306,22 @@ footer .ftr-2 p {
   transform: scale(-1);
 }
 
-.up {
+#aside-r {
+  position: sticky;
+  top: 20%;
+  right: 0;
+}
+#aside-r div {
+  padding: 2px 10px;
+}
+
+#up {
   position: absolute;
   right: 1%;
   bottom: 10%;
   font-size: 0.9rem;
 }
-.up a {
+#up a {
   transform: rotate(-90deg);
 }
 
