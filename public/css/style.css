@@ -10243,29 +10243,29 @@ header #womens h1 {
 #sect-6 {
   background-color: #F7F2ED;
 }
-#sect-6 .col-4 {
+#sect-6 .bougie {
   background-image: url("../img/collect/one-page-img-04.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 40%;
 }
-#sect-6 .col-3 {
+#sect-6 .adresse {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: space-between;
   padding: 10vh 5vh;
 }
-#sect-6 .col-3 p {
+#sect-6 .adresse p {
   font-size: 0.8rem;
 }
-#sect-6 .col-5 {
+#sect-6 .formulaire {
   background-image: url("../img/fashion/fashion-brand-parallax-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10vh;
 }
-#sect-6 .col-5 input, #sect-6 .col-5 textarea {
+#sect-6 .formulaire input, #sect-6 .formulaire textarea {
   background-color: unset;
   border: none;
   border-radius: 0px;
@@ -10274,7 +10274,7 @@ header #womens h1 {
   font-size: 0.9rem;
   color: white;
 }
-#sect-6 .col-5 label {
+#sect-6 .formulaire label {
   font-size: 0.9rem;
 }
 
