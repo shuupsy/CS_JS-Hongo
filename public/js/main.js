@@ -28,7 +28,6 @@ window.addEventListener("scroll", navBg)
 
 
 // Dark mode 
-let body = document.querySelector("body")
 let sections = document.querySelectorAll("section")
 
 let dark = document.querySelector(".dark")
@@ -36,8 +35,6 @@ dark.addEventListener("click", () => {
     dark.classList.toggle("moon")
     if(dark.classList.contains("moon")) {
         dark.innerHTML = `<i class="fa-solid fa-sun"></i>`
-        body.style.backgroundColor = "#FFFFFF"
-        body.style.color = "white"
         sections.forEach(e => {
             e.style.backgroundColor = "black"
             e.style.color = "white"
@@ -45,8 +42,6 @@ dark.addEventListener("click", () => {
     } else {
         dark.classList.remove("moon")
         dark.innerHTML = `<i class="fa-solid fa-moon"></i>`
-        body.style.backgroundColor = "unset"
-        body.style.color = "unset"
         sections.forEach(e => {
             e.style.backgroundColor = "unset"
             e.style.color = "unset"
