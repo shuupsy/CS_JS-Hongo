@@ -29,10 +29,11 @@ window.addEventListener("scroll", navBg)
 
 // Produits
 class Produits {
-    constructor(nom, prix, lien) {
+    constructor(nom, prix, lien, hover) {
         this.nom = nom;
         this.prix = prix;
         this.lien = lien;
+        this.hover = hover;
     }
 }
 
@@ -92,16 +93,18 @@ produits.forEach(item => {
     let divI = document.createElement("div")
     divE.appendChild(divI)
     let divP = document.createElement("div")
+    divP.classList.add("py-3")
     divE.appendChild(divP)
     // Image
     let imgShopping = document.createElement("img")
     imgShopping.setAttribute("src", item.lien)
     imgShopping.style.width = "100%"
     divI.appendChild(imgShopping)
-    // p
+    // p : nom item
     let nom = document.createElement("p")
     nom.innerHTML = item.nom
     nom.classList.add("fw-bold")
+    // p : prix item
     let prix = document.createElement("p")
     prix.innerHTML = item.prix
     prix.classList.add("text-secondary")
