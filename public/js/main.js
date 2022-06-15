@@ -85,12 +85,12 @@ divB.style.fontSize = "0.8rem"
 
 // SUPER LOOP
 produits.forEach(item => {
-    // Div Element qui contient image + la div des p
-    let divE = document.createElement("div")
-    divB.appendChild(divE)
+    let divE = document.createElement("div") // Div Element qui contient image + la div des p
+    divB.appendChild(divE) // Div Element rattaché à la div boite
     // Div Image + Div p
     let divI = document.createElement("div")
     divE.appendChild(divI)
+    divI.classList.add("position-relative")
     let divP = document.createElement("div")
     divP.classList.add("py-3")
     divE.appendChild(divP)
@@ -111,7 +111,8 @@ produits.forEach(item => {
     divP.appendChild(prix)
     // Div Fav/Cart au hover
     let divH = document.createElement("div")
-    divH.setAttribute("class", "position-relative text-center text-light bg-light")
+    divH.setAttribute("class", "position-absolute bottom-0 text-center text-light bg-light d-none")
+    divH.style.width = "100%"
     divH.style.display = "grid"
     divH.style.gridTemplateColumns = "repeat(2, 1fr)"
     divH.style.gap = "1px"
@@ -133,10 +134,14 @@ produits.forEach(item => {
     divH.appendChild(cartP)
 
     //hover
-    imgShopping.addEventListener("mouseover", () => {
-        imgShopping.setAttribute("src", item.hover) // Change l'image
+    divE.addEventListener("mouseover", () => {
+        if (divH.classList.contains("d-none")) {
+            imgShopping.setAttribute("src", item.hover) // Image, vue AR
+            divH.classList.remove("d-none") // Montre l'encadré noir
+        }
     })
-    imgShopping.addEventListener("mouseout", () => {
-        imgShopping.setAttribute("src", item.lien)
+    divE.addEventListener("mouseout", () => {
+        imgShopping.setAttribute("src", item.lien) // Image originale
+        divH.classList.add("d-none") // Cache l'encadré noir
     })
 })
