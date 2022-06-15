@@ -10206,7 +10206,11 @@ header #womens h1 {
 #sect-5 .titre p {
   font-size: 0.8rem;
 }
-#sect-5 .quote {
+#sect-5 .cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+#sect-5 .cartes .quote {
   font-size: 0.8rem;
 }
 
