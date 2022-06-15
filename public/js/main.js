@@ -42,7 +42,6 @@ dark.addEventListener("click", () => {
             e.style.backgroundColor = "black"
             e.style.color = "white"
         })
-        
     } else {
         dark.classList.remove("moon")
         dark.innerHTML = `<i class="fa-solid fa-moon"></i>`
