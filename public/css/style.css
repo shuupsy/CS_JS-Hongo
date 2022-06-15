@@ -10161,6 +10161,8 @@ header {
   background-image: url("../img/collect/one-page-slider-01.jpg");
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 header nav {
   padding: 0 10vh;
@@ -10176,7 +10178,7 @@ header #pre-main {
 }
 header #womens {
   position: absolute;
-  bottom: -7%;
+  bottom: -8%;
   left: 50%;
   transform: translateX(-50%);
 }
