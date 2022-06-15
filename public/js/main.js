@@ -109,10 +109,32 @@ produits.forEach(item => {
     prix.classList.add("text-secondary")
     divP.appendChild(nom)
     divP.appendChild(prix)
+    // Div Fav/Cart au hover
+    let divH = document.createElement("div")
+    divH.setAttribute("class", "position-relative text-center text-light bg-light")
+    divH.style.display = "grid"
+    divH.style.gridTemplateColumns = "repeat(2, 1fr)"
+    divH.style.gap = "1px"
+    divI.appendChild(divH)
+    // Elements p
+    let heartP = document.createElement("p")
+    heartP.setAttribute("class", "bg-dark py-2")
+    let cartP = document.createElement("p")
+    cartP.setAttribute("class", "bg-dark py-2")
+    // Elements i
+    let heart = document.createElement("i")
+    heart.setAttribute("class", "fa-solid fa-heart")
+    heartP.appendChild(heart)
+    let cart = document.createElement("i")
+    cart.setAttribute("class", "fa-solid fa-cart-shopping")
+    cartP.appendChild(cart)
+
+    divH.appendChild(heartP)
+    divH.appendChild(cartP)
 
     //hover
     imgShopping.addEventListener("mouseover", () => {
-        imgShopping.setAttribute("src", item.hover)
+        imgShopping.setAttribute("src", item.hover) // Change l'image
     })
     imgShopping.addEventListener("mouseout", () => {
         imgShopping.setAttribute("src", item.lien)
