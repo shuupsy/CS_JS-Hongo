@@ -10137,6 +10137,14 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.ttf");
+}
+* {
+  font-family: "Poppins", sans-serif;
+}
+
 *, p, ul, div {
   margin: 0 !important;
   padding: 0;
