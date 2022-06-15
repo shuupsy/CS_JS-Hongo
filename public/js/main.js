@@ -61,7 +61,7 @@ h2.classList.add("py-2")
 
 let p = document.createElement("p")
 p.innerHTML = "Lorem Ipsum is simpy dummy text of the printing and typesetting industry printing and industry."
-p.style.fontSize = "1rem"
+p.style.fontSize = "0.8rem"
 p.classList.add("text-secondary")
 
 let divT = document.createElement("div")
