@@ -78,9 +78,13 @@
                 <ul class="col-2 justify-content-end navbar-nav gap-3">
                     <li class="nav-item"><i class="fa-solid fa-magnifying-glass"></i></li>
                     <li class="nav-item user" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                        class="fa-regular fa-user"></i></li>
-                    <li class="nav-item"><i class="fa-regular fa-heart"></i></li>
-                    <li class="nav-item"><i class="fa-solid fa-cart-shopping"></i></li>
+                            class="fa-regular fa-user"></i></li>
+                    <!-- Favoris -->
+                    <li class="nav-item position-relative"><i class="fa-regular fa-heart"></i><span class="fav position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger"></span></li>
+                    <!-- Panier -->
+                    <li class="nav-item position-relative"><i class="fa-solid fa-cart-shopping"><span
+                                class="cart position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger"></span></i>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -114,19 +118,20 @@
                     <!-- Contenu modal -->
                     <form>
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-2">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3 p-0 d-flex align-items-center justify-content-start form-check">
-                          <input type="checkbox" class="form-check-input me-1" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <input type="checkbox" class="form-check-input me-1" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
-                      </form>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-white" data-bs-dismiss="modal">Close</button>

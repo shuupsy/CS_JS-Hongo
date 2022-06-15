@@ -117,23 +117,21 @@ produits.forEach(item => {
     divH.style.gridTemplateColumns = "repeat(2, 1fr)"
     divH.style.gap = "1px"
     divI.appendChild(divH)
-    // Elements p
-    let heartP = document.createElement("p")
-    heartP.setAttribute("class", "bg-dark py-2")
-    let cartP = document.createElement("p")
-    cartP.setAttribute("class", "bg-dark py-2")
-    // Elements i
-    let heart = document.createElement("i")
-    heart.setAttribute("class", "fa-solid fa-heart")
-    heartP.appendChild(heart)
-    let cart = document.createElement("i")
-    cart.setAttribute("class", "fa-solid fa-cart-shopping")
-    cartP.appendChild(cart)
-
-    divH.appendChild(heartP)
-    divH.appendChild(cartP)
+    // Elements button
+    let heart = document.createElement("p")
+    heart.setAttribute("class", "coeur btn-dark border-none py-2")
+    heart.innerHTML = `<i class="fa-solid fa-heart"></i>`
+    let cart = document.createElement("p")
+    cart.setAttribute("class", "panier btn-dark border-none py-2")
+    cart.innerHTML = `<i class="fa-solid fa-cart-shopping"></i>`
+    divH.appendChild(heart)
+    divH.appendChild(cart)
 
     //hover
+    let fav = document.querySelector(".fav")
+    let panier = document.querySelector(".cart")
+
+
     divE.addEventListener("mouseover", () => {
         if (divH.classList.contains("d-none")) {
             imgShopping.setAttribute("src", item.hover) // Image, vue AR
