@@ -37,17 +37,16 @@ class Produits {
     }
 }
 
-let p1 = new Produits("Textured Sweater", "$50.00", "public/img/fashion/fashion-recent-products-01-1-1.jpg")
-let p2 = new Produits("Traveller Shirt", "$510.00", "public/img/fashion/fashion-recent-products-02-1-1.jpg")
-let p3 = new Produits("Crewneck Sweatshirt", "$50.00", "public/img/fashion/fashion-recent-products-01-b.jpg")
-let p4 = new Produits("Skinny Trousers", "$160.00", "public/img/fashion/fashion-recent-products-04.jpg")
-let p5 = new Produits("High Neck Sweater", "$35.00", "public/img/fashion/fashion-recent-products-05-1.jpg")
-let p6 = new Produits("Sleeve Sweater", "$120.00", "public/img/fashion/fashion-recent-products-06-1.jpg")
-let p7 = new Produits("Pocket Sweatshirt", "$410.00", "public/img/fashion/fashion-recent-products-07-1.jpg")
-let p8 = new Produits("Top With Pleated", "$50.00", "public/img/fashion/fashion-recent-products-08-1.jpg")
-let p9 = new Produits("Cotton Sweater", "$155.00", "public/img/fashion/fashion-recent-products-01-d.jpg")
-let p10 = new Produits("Textured Plain Regular", "$70.00", "public/img/fashion/fashion-recent-products-10-1.jpg")
-console.log(p1.prix)
+let p1 = new Produits("Textured Sweater", "$50.00", "public/img/fashion/fashion-recent-products-01-1-1.jpg", "public/img/fashion/fashion-recent-products-01-a-1-1.jpg")
+let p2 = new Produits("Traveller Shirt", "$510.00", "public/img/fashion/fashion-recent-products-02-1-1.jpg", "public/img/fashion/fashion-recent-products-02-a-1-1-1.jpg")
+let p3 = new Produits("Crewneck Sweatshirt", "$50.00", "public/img/fashion/fashion-recent-products-01-b.jpg", "public/img/fashion/fashion-recent-products-03-a-1-1.jpg")
+let p4 = new Produits("Skinny Trousers", "$160.00", "public/img/fashion/fashion-recent-products-04.jpg", "public/img/fashion/fashion-recent-products-04-a-1.jpg")
+let p5 = new Produits("High Neck Sweater", "$35.00", "public/img/fashion/fashion-recent-products-05-1.jpg", "public/img/fashion/fashion-recent-products-05-a-1.jpg")
+let p6 = new Produits("Sleeve Sweater", "$120.00", "public/img/fashion/fashion-recent-products-06-1.jpg", "public/img/fashion/fashion-recent-products-06-a-1.jpg")
+let p7 = new Produits("Pocket Sweatshirt", "$410.00", "public/img/fashion/fashion-recent-products-07-1.jpg", "public/img/fashion/fashion-recent-products-07-a-1.jpg")
+let p8 = new Produits("Top With Pleated", "$50.00", "public/img/fashion/fashion-recent-products-08-1.jpg", "public/img/fashion/fashion-recent-products-08-a.jpg")
+let p9 = new Produits("Cotton Sweater", "$155.00", "public/img/fashion/fashion-recent-products-01-d.jpg", "public/img/fashion/fashion-recent-products-09-a-1-1.jpg")
+let p10 = new Produits("Textured Plain Regular", "$70.00", "public/img/fashion/fashion-recent-products-10-1.jpg", "public/img/fashion/fashion-recent-products-10-a-1.jpg")
 
 let produits = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10]
 
@@ -110,4 +109,12 @@ produits.forEach(item => {
     prix.classList.add("text-secondary")
     divP.appendChild(nom)
     divP.appendChild(prix)
+
+    //hover
+    imgShopping.addEventListener("mouseover", () => {
+        imgShopping.setAttribute("src", item.hover)
+    })
+    imgShopping.addEventListener("mouseout", () => {
+        imgShopping.setAttribute("src", item.lien)
+    })
 })
