@@ -10212,17 +10212,18 @@ header #womens h1 {
 }
 
 #sect-1 .about {
-  padding: 10vh 25vh;
   font-size: 0.8rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display-grid-template-columns: repeat;
 }
 
 #sect-2 {
   background-color: #F7F2ED;
-  padding: 15vh 20vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#sect-2 img {
+  width: 80%;
 }
 #sect-2 p {
   font-size: 0.8rem;
@@ -10393,12 +10394,24 @@ footer .ftr-2 p {
 }
 
 @media screen and (min-width: 768px) {
+  #sect-1 .about {
+    padding: 10vh 25vh;
+  }
+
+  #sect-2 img {
+    width: 100%;
+  }
+
   #sect-6 {
     display: grid;
     grid-template-columns: 1fr 60%;
   }
 }
 @media screen and (min-width: 1024px) {
+  #sect-2 {
+    padding: 15vh;
+  }
+
   #sect-4 .titre {
     padding: 0 35vw;
   }
@@ -10423,6 +10436,10 @@ footer .ftr-2 p {
   }
 }
 @media screen and (min-width: 1200px) {
+  #sect-2 {
+    padding: 15vh 20vh;
+  }
+
   footer section {
     padding: 0 26vh;
   }
