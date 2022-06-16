@@ -10259,7 +10259,7 @@ header #womens h1 {
   width: 100%;
 }
 #sect-4 .testimonials .avis {
-  width: 30%;
+  width: 80%;
 }
 #sect-4 .testimonials .avis img {
   width: 50px;
@@ -10401,6 +10401,9 @@ footer .ftr-2 p {
 @media screen and (min-width: 1024px) {
   #sect-4 .titre {
     padding: 0 35vw;
+  }
+  #sect-4 .testimonials .avis {
+    width: 30%;
   }
 
   #sect-5 .titre {
