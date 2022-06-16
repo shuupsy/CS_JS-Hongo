@@ -10258,12 +10258,15 @@ header #womens h1 {
   font-size: 0.8rem;
 }
 #sect-4 .testimonials {
-  padding: 10vh 15vw 0;
+  width: 100%;
 }
-#sect-4 .testimonials img {
+#sect-4 .testimonials .avis {
+  width: 30%;
+}
+#sect-4 .testimonials .avis img {
   width: 50px;
 }
-#sect-4 .testimonials p {
+#sect-4 .testimonials .avis p {
   font-size: 0.9rem;
 }
 

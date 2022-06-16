@@ -165,3 +165,20 @@ produits.forEach(item => {
         divH.classList.add("d-none") // Cache l'encadré noir
     })
 })
+
+
+// Carousel Testimonials
+let gauche = document.querySelector("#left")
+let droite = document.querySelector("#right")
+
+let avis = document.querySelectorAll(".avis") //Tableau d'avis
+avis.forEach(a => {
+    if (a.classList.contains("active")) {
+        a.style.display = "block"
+    } else {
+        a.style.display = "none"
+    }
+})
+let i = 0
+
+gauche.addEventListener("click", left)
