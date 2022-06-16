@@ -109,7 +109,6 @@ produits.forEach(item => {
     let fav = document.querySelector(".fav")
     let panier = document.querySelector(".cart")
 
-
     divE.addEventListener("mouseover", () => {
         if (divH.classList.contains("d-none")) {
             imgShopping.setAttribute("src", item.hover) // Image, vue AR
@@ -120,6 +119,20 @@ produits.forEach(item => {
         imgShopping.setAttribute("src", item.lien) // Image originale
         divH.classList.add("d-none") // Cache l'encadré noir
     })
+
+    // Fav/Cart
+    divH.addEventListener("click", ajout)
+    function ajout(event){
+        let coeur = divH.firstChild
+        let achat = divH.lastChild
+        
+        if(event.target == coeur || event.target == coeur.firstChild) {
+            console.log(coeur)
+        } else if (event.target == achat || event.target == achat.firstChild) {
+           console.log(achat)
+        }
+    }
+
 })
 
 export {Produits, produits,sect3, h2, p, divT, divB,w}
