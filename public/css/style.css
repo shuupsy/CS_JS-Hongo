@@ -10160,7 +10160,7 @@ ul {
 header {
   overflow: hidden;
   background-color: #F5EBDF;
-  height: 100vh;
+  position: relative;
 }
 header nav .user {
   cursor: pointer;
@@ -10394,6 +10394,10 @@ footer .ftr-2 p {
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    height: 100vh;
+  }
+
   #sect-1 .about {
     padding: 10vh;
   }

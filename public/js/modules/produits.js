@@ -120,7 +120,7 @@ produits.forEach(item => {
         divH.classList.add("d-none") // Cache l'encadré noir
     })
 
-    // Fav/Cart
+    // Fav/Cart => span + 1
     divH.addEventListener("click", ajout)
     function ajout(event){
         let coeur = divH.firstChild
@@ -132,7 +132,6 @@ produits.forEach(item => {
            panier.innerHTML = +(panier.innerHTML) + 1
         }
     }
-
 })
 
 export {Produits, produits,sect3, h2, p, divT, divB,w}
