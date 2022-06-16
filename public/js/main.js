@@ -87,8 +87,15 @@ p.style.fontSize = "0.8rem"
 p.classList.add("text-secondary")
 
 let divT = document.createElement("div")
-divT.style.padding = "0 35vw"
+
 divT.style.textAlign = "center"
+let w = window.matchMedia("min-width: 1024px")
+// MediaQ Titre
+if (w.matches) {
+    divT.style.padding = "0 35vw"
+} else {
+    divT.style.padding = "0 5vh"
+}
 
 sect3.appendChild(divT)
 divT.appendChild(h2)
