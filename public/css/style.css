@@ -10158,11 +10158,9 @@ ul {
 }
 
 header {
-  background-image: url("../img/collect/one-page-slider-01.jpg");
-  background-size: cover;
   height: 100vh;
   overflow: hidden;
-  position: relative;
+  background-color: #F5EBDF;
 }
 header nav {
   padding: 0 10vh;
@@ -10171,10 +10169,39 @@ header nav .user {
   cursor: pointer;
 }
 header #pre-main {
+  height: 100%;
+}
+header #pre-main .carousel {
+  height: 100%;
+}
+header #pre-main .carousel .indicators-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40%;
+  right: 7vh;
+  z-index: 9999;
+}
+header #pre-main .carousel .indicators-container .indicators {
+  border: none;
+  background-color: unset;
+}
+header #pre-main .carousel .indicators-container .indicators:focus {
+  text-decoration: line-through;
+}
+header #pre-main .carousel .carousel-inner {
+  background-image: url("../img/collect/one-page-slider-01.jpg");
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+header #pre-main .carousel .carousel-inner .description {
   width: 25%;
   position: absolute;
-  top: 30%;
+  transform: translateY(50%);
   left: 18%;
+  font-size: 1rem;
+  z-index: 9999;
 }
 header #womens {
   position: absolute;

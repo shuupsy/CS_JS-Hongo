@@ -1,18 +1,40 @@
 header
-    background-image: url('../img/collect/one-page-slider-01.jpg')
-    background-size: cover
     height: 100vh
     overflow: hidden
-    position: relative
+    background-color: $beige
     nav
         padding: 0 10vh
         .user
             cursor: pointer
     #pre-main
-        width: 25%
-        position: absolute
-        top: 30%
-        left: 18%
+        height: 100%
+        .carousel
+            height: 100%
+            .indicators-container
+                display: flex
+                flex-direction: column
+                position: absolute
+                top: 40%
+                right: 7vh
+                z-index: 9999
+                .indicators
+                    border: none
+                    background-color: unset
+                .indicators:focus
+                    text-decoration: line-through
+            .carousel-inner
+                background-image: url('../img/collect/one-page-slider-01.jpg')
+                background-size: cover
+                height: 100%
+                position: relative
+                .description
+                    width: 25%
+                    position: absolute
+                    transform: translateY(50%)
+                    left: 18%
+                    font-size: 1rem
+                    z-index: 9999
+
     #womens
         position: absolute
         bottom: -8%
