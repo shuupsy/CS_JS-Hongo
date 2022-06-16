@@ -127,9 +127,9 @@ produits.forEach(item => {
         let achat = divH.lastChild
         
         if(event.target == coeur || event.target == coeur.firstChild) {
-            console.log(coeur)
+            fav.innerHTML = +(fav.innerHTML) + 1
         } else if (event.target == achat || event.target == achat.firstChild) {
-           console.log(achat)
+           panier.innerHTML = +(panier.innerHTML) + 1
         }
     }
 
