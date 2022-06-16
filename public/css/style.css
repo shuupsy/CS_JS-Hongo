@@ -10213,14 +10213,14 @@ header #womens h1 {
 
 #sect-1 .about {
   font-size: 0.8rem;
-  display: grid;
-  display-grid-template-columns: repeat;
+  padding: 15px;
 }
 
 #sect-2 {
   background-color: #F7F2ED;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 5vh 0;
 }
 #sect-2 img {
   width: 80%;
@@ -10395,7 +10395,7 @@ footer .ftr-2 p {
 
 @media screen and (min-width: 768px) {
   #sect-1 .about {
-    padding: 10vh 25vh;
+    padding: 10vh;
   }
 
   #sect-2 img {
@@ -10408,6 +10408,12 @@ footer .ftr-2 p {
   }
 }
 @media screen and (min-width: 1024px) {
+  #sect-1 .about {
+    padding: 10vh 25vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   #sect-2 {
     padding: 15vh;
   }
