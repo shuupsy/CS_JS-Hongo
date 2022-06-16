@@ -46,14 +46,15 @@
     <!-- Début Header -->
     <header>
         <!-- Début nav -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid justify-content-between">
-                <a class="col-2 navbar-brand" href="index.html"><img class="logo" src="public/img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light px-5">
+            <div class="container-fluid d-flex justify-content-around">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="public/img/logo.png" alt=""></a>
+                <button class="navbar-toggler position-fixed top-0 right-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="col collapse navbar-collapse justify-content-center" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
                     <ul class="gap-2 navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
@@ -75,94 +76,101 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="col-2 justify-content-end navbar-nav gap-3">
-                    <li class="dark nav-item me-4"><i class="fa-solid fa-moon"></i></li>
+                <ul class="justify-content-end align-items-center navbar-nav gap-3">
+                    <li class="dark nav-item"><i class="fa-solid fa-moon"></i></li>
                     <li class="nav-item"><i class="fa-solid fa-magnifying-glass"></i></li>
                     <li class="nav-item user" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
                             class="fa-regular fa-user"></i></li>
                     <!-- Favoris -->
-                    <li class="nav-item position-relative"><i class="fa-regular fa-heart"></i><span class="fav position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger"></span></li>
+                    <li class="nav-item position-relative"><i class="fa-regular fa-heart"></i><span
+                            class="fav position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger"></span>
+                    </li>
                     <!-- Panier -->
                     <li class="nav-item position-relative"><i class="fa-solid fa-cart-shopping"><span
                                 class="cart position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger"></span></i>
                     </li>
                 </ul>
+
             </div>
         </nav>
         <hr>
         <!-- Pre-main -->
         <section id="pre-main">
-        <!-- Début carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="indicators-container gap-2">
-                <button class="indicators" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1">01</button>
-                <button class="indicators" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2">02</button>
-                <button class="indicators" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3">03</button>
-                <button class="indicators" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4">04</button>
+            <!-- Début carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="indicators-container gap-2">
+                    <button class="indicators" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">01</button>
+                    <button class="indicators" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1" aria-label="Slide 2">02</button>
+                    <button class="indicators" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3">03</button>
+                    <button class="indicators" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="3" aria-label="Slide 4">04</button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="description">
+                            <p class="py-3 fw-bold">— NEW COLLECTION 2019</p>
+                            <h1>Brown leather women's bags</h1>
+                            <p class="text-secondary py-3">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry
+                                printing and industry.</p>
+                            <h2 class="fs-5 py-3"><span class="text-decoration-line-through">Regular £69.00 </span> Just
+                                £59.00</h2>
+                            <button class="btn-dark p-2">SHOP WOMEN</button>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="description">
+                            <p class="py-3 fw-bold">— NEW COLLECTION 2019</p>
+                            <h1>Brown leather women's bags</h1>
+                            <p class="text-secondary py-3">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry
+                                printing and industry.</p>
+                            <h2 class="fs-5 py-3"><span class="text-decoration-line-through">Regular £69.00 </span> Just
+                                £59.00</h2>
+                            <button class="btn-dark p-2">SHOP WOMEN</button>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="description">
+                            <p class="py-3 fw-bold">— NEW COLLECTION 2019</p>
+                            <h1>Brown leather women's bags</h1>
+                            <p class="text-secondary py-3">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry
+                                printing and industry.</p>
+                            <h2 class="fs-5 py-3"><span class="text-decoration-line-through">Regular £69.00 </span> Just
+                                £59.00</h2>
+                            <button class="btn-dark p-2">SHOP WOMEN</button>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="description">
+                            <p class="py-3 fw-bold">— NEW COLLECTION 2019</p>
+                            <h1>Brown leather women's bags</h1>
+                            <p class="text-secondary py-3">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting
+                                industry
+                                printing and industry.</p>
+                            <h2 class="fs-5 py-3"><span class="text-decoration-line-through">Regular £69.00 </span> Just
+                                £59.00</h2>
+                            <button class="btn-dark p-2">SHOP WOMEN</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <!-- Slide 1 -->
-                <div class="carousel-item active">
-                    <div class="description">
-                        <p class="py-3 fw-bold">— NEW COLLECTION 2019</p>
-                        <h1>Brown leather women's bags</h1>
-                        <p class="text-secondary py-3">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry
-                            printing and industry.</p>
-                        <h2 class="fs-5 py-3"><span class="text-decoration-line-through">Regular £69.00 </span> Just
-                            £59.00</h2>
-                        <button class="btn-dark p-2">SHOP WOMEN</button>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="carousel-item">
-                    <div class="description">
-                        <p class="py-3 fw-bold">— NEW COLLECTION 2019</p>
-                        <h1>Brown leather women's bags</h1>
-                        <p class="text-secondary py-3">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry
-                            printing and industry.</p>
-                        <h2 class="fs-5 py-3"><span class="text-decoration-line-through">Regular £69.00 </span> Just
-                            £59.00</h2>
-                        <button class="btn-dark p-2">SHOP WOMEN</button>
-                    </div>
-                </div>
-                <!-- Slide 3 -->
-                <div class="carousel-item">
-                    <div class="description">
-                        <p class="py-3 fw-bold">— NEW COLLECTION 2019</p>
-                        <h1>Brown leather women's bags</h1>
-                        <p class="text-secondary py-3">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry
-                            printing and industry.</p>
-                        <h2 class="fs-5 py-3"><span class="text-decoration-line-through">Regular £69.00 </span> Just
-                            £59.00</h2>
-                        <button class="btn-dark p-2">SHOP WOMEN</button>
-                    </div>
-                </div>
-                <!-- Slide 4 -->
-                <div class="carousel-item">
-                    <div class="description">
-                        <p class="py-3 fw-bold">— NEW COLLECTION 2019</p>
-                        <h1>Brown leather women's bags</h1>
-                        <p class="text-secondary py-3">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry
-                            printing and industry.</p>
-                        <h2 class="fs-5 py-3"><span class="text-decoration-line-through">Regular £69.00 </span> Just
-                            £59.00</h2>
-                        <button class="btn-dark p-2">SHOP WOMEN</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Fin carousel -->
+            <!-- Fin carousel -->
         </section>
         <!-- Titre "womens" en blanc -->
-        <div id="womens" class="text-white">
+        <div id="womens" class="d-none d-md-block text-white">
             <h1>womens</h1>
         </div>
     </header>
@@ -333,8 +341,10 @@
             </div>
             <!-- Boutons  -->
             <div class="testimonials-slides d-flex justify-content-around px-5">
-                <button id="left" class="border-0 position-relative top-50"><i class="fa-solid fa-arrow-left"></i></button>
-                <button id="right" class="border-0 position-relative top-50"><i class="fa-solid fa-arrow-right"></i></button>
+                <button id="left" class="border-0 position-relative top-50"><i
+                        class="fa-solid fa-arrow-left"></i></button>
+                <button id="right" class="border-0 position-relative top-50"><i
+                        class="fa-solid fa-arrow-right"></i></button>
             </div>
         </section>
 
@@ -447,7 +457,8 @@
     <!-- Début Footer -->
     <footer class="text-secondary">
         <!-- 1ère ligne -->
-        <section class="ftr-1 border-bottom border-secondary d-lg-flex flex-wrap justify-content-between align-items-center py-4 gap-2">
+        <section
+            class="ftr-1 border-bottom border-secondary d-lg-flex flex-wrap justify-content-between align-items-center py-4 gap-2">
             <div class="d-lg-flex flex-wrap align-items-center">
                 <p class="text-light me-3">LAST CHANCE TO WIN OUR DISCOUNT !</p>
                 <input type="text" placeholder="Enter your email...">

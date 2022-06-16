@@ -10158,12 +10158,9 @@ ul {
 }
 
 header {
-  height: 100vh;
   overflow: hidden;
   background-color: #F5EBDF;
-}
-header nav {
-  padding: 0 10vh;
+  height: 100vh;
 }
 header nav .user {
   cursor: pointer;
@@ -10192,6 +10189,7 @@ header #pre-main .carousel .indicators-container .indicators:focus {
 header #pre-main .carousel .carousel-inner {
   background-image: url("../img/collect/one-page-slider-01.jpg");
   background-size: cover;
+  background-position: center;
   height: 100%;
   position: relative;
 }
@@ -10321,7 +10319,7 @@ header #womens h1 {
 
 footer section {
   background-color: #1E1E1E;
-  padding: 0 26vh;
+  padding: 0 10vh;
 }
 footer section .insta-pics img {
   width: 50px;
@@ -10346,7 +10344,7 @@ footer section div {
 }
 footer .ftr-2 {
   background-color: #141414;
-  padding: 2.5vh 26vh 1vh;
+  padding: 2vh auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -10392,6 +10390,20 @@ footer .ftr-2 p {
   left: 50% !important;
   transform: translateX(-50%);
   width: 400px !important;
+}
+
+@media screen and (min-width: 1024px) {
+  footer section {
+    padding: 0 5vh;
+  }
+  footer .ftr-2 {
+    padding: 2.5vh 26vh 1vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer section {
+    padding: 0 26vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
