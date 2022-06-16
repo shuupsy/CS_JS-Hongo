@@ -10232,7 +10232,7 @@ header #womens h1 {
   padding: 15vh 0;
 }
 #sect-5 .titre {
-  padding: 0 35vw;
+  padding: 0 5vh;
 }
 #sect-5 .titre p {
   font-size: 0.8rem;
@@ -10250,7 +10250,7 @@ header #womens h1 {
   padding: 15vh 0;
 }
 #sect-4 .titre {
-  padding: 0 35vw;
+  padding: 0 5vh;
 }
 #sect-4 .titre p {
   font-size: 0.8rem;
@@ -10399,6 +10399,14 @@ footer .ftr-2 p {
   }
 }
 @media screen and (min-width: 1024px) {
+  #sect-4 .titre {
+    padding: 0 35vw;
+  }
+
+  #sect-5 .titre {
+    padding: 0 35vw;
+  }
+
   #sect-6 {
     display: grid;
     grid-template-columns: 30% 1fr 45%;
