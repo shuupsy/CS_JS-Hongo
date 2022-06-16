@@ -10392,7 +10392,18 @@ footer .ftr-2 p {
   width: 400px !important;
 }
 
+@media screen and (min-width: 768px) {
+  #sect-6 {
+    display: grid;
+    grid-template-columns: 1fr 60%;
+  }
+}
 @media screen and (min-width: 1024px) {
+  #sect-6 {
+    display: grid;
+    grid-template-columns: 30% 1fr 45%;
+  }
+
   footer section {
     padding: 0 5vh;
   }
