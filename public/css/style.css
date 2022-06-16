@@ -10196,10 +10196,15 @@ header #pre-main .carousel .carousel-inner {
 header #pre-main .carousel .carousel-inner .description {
   width: 25%;
   position: absolute;
-  transform: translateY(50%);
+  transform: translateY(20%);
   left: 18%;
-  font-size: 1rem;
   z-index: 9999;
+}
+header #pre-main .carousel .carousel-inner .description p {
+  font-size: 0.8rem;
+}
+header #pre-main .carousel .carousel-inner .description h1, header #pre-main .carousel .carousel-inner .description h2 {
+  font-size: 1.3rem;
 }
 header #womens {
   position: absolute;
@@ -10412,6 +10417,16 @@ footer .ftr-2 p {
   }
 }
 @media screen and (min-width: 1024px) {
+  header #pre-main .carousel .carousel-inner .description p {
+    font-size: 1rem;
+  }
+  header #pre-main .carousel .carousel-inner .description h1 {
+    font-size: 2rem;
+  }
+  header #pre-main .carousel .carousel-inner .description h2 {
+    font-size: 1.5rem;
+  }
+
   #sect-1 .about {
     padding: 10vh 25vh;
     display: grid;
@@ -10446,6 +10461,10 @@ footer .ftr-2 p {
   }
 }
 @media screen and (min-width: 1200px) {
+  header #pre-main .carousel .carousel-inner .description {
+    transform: translateY(50%);
+  }
+
   #sect-2 {
     padding: 15vh 20vh;
   }
