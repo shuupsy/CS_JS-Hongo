@@ -10270,6 +10270,10 @@ header #womens h1 {
   font-size: 0.9rem;
 }
 
+.inactif {
+  display: none;
+}
+
 #sect-6 {
   background-color: #F7F2ED;
 }

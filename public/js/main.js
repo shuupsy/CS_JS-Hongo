@@ -33,7 +33,7 @@ let sections = document.querySelectorAll("section")
 let dark = document.querySelector(".dark")
 dark.addEventListener("click", () => {
     dark.classList.toggle("moon")
-    if(dark.classList.contains("moon")) {
+    if (dark.classList.contains("moon")) {
         dark.innerHTML = `<i class="fa-solid fa-sun"></i>`
         sections.forEach(e => {
             e.style.backgroundColor = "black"
@@ -172,13 +172,19 @@ let gauche = document.querySelector("#left")
 let droite = document.querySelector("#right")
 
 let avis = document.querySelectorAll(".avis") //Tableau d'avis
-avis.forEach(a => {
-    if (a.classList.contains("active")) {
-        a.style.display = "block"
-    } else {
-        a.style.display = "none"
-    }
-})
-let i = 0
 
-gauche.addEventListener("click", left)
+
+let i = 0
+droite.addEventListener("click", Droite)
+
+function Droite() {
+    if (i == avis.length - 1) {
+        avis[i].classList.add("inactif")
+        avis[0].classList.remove("inactif")
+        i=0
+    } else {
+        avis[i].classList.add("inactif")
+        avis[i + 1].classList.remove("inactif")
+        i++
+    }
+}
