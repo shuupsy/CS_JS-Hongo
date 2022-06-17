@@ -10198,7 +10198,6 @@ header #pre-main .carousel .carousel-inner .description {
   position: absolute;
   transform: translateY(20%);
   left: 18%;
-  z-index: 9999;
 }
 header #pre-main .carousel .carousel-inner .description p {
   font-size: 0.8rem;
