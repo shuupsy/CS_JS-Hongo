@@ -142,5 +142,3 @@ produits.forEach(item => {
 })
 
 export {Produits, produits,sect3, h2, p, divT, divB,w}
-
-produits.classList.contains
