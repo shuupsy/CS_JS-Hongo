@@ -127,7 +127,14 @@ produits.forEach(item => {
         let achat = divH.lastChild
         
         if(event.target == coeur || event.target == coeur.firstChild) {
-            fav.innerHTML = +(fav.innerHTML) + 1
+            if (coeur.classList.contains("faved")) {
+                coeur.classList.remove("faved")
+                fav.innerHTML = +(fav.innerHTML) - 1
+            } else {
+                coeur.classList.add("faved")
+                fav.innerHTML = +(fav.innerHTML) + 1
+            }
+
         } else if (event.target == achat || event.target == achat.firstChild) {
            panier.innerHTML = +(panier.innerHTML) + 1
         }
@@ -135,3 +142,5 @@ produits.forEach(item => {
 })
 
 export {Produits, produits,sect3, h2, p, divT, divB,w}
+
+produits.classList.contains
