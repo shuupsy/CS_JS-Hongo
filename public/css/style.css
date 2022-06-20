@@ -10161,6 +10161,7 @@ header {
   overflow: hidden;
   background-color: #F5EBDF;
   position: relative;
+  height: 100vh;
 }
 header nav .user {
   cursor: pointer;
@@ -10194,10 +10195,10 @@ header #pre-main .carousel .carousel-inner {
   position: relative;
 }
 header #pre-main .carousel .carousel-inner .description {
-  width: 25%;
+  width: 50%;
   position: absolute;
   transform: translateY(20%);
-  left: 18%;
+  left: 10%;
 }
 header #pre-main .carousel .carousel-inner .description p {
   font-size: 0.8rem;
@@ -10400,6 +10401,10 @@ footer .ftr-2 p {
 @media screen and (min-width: 768px) {
   header {
     height: 100vh;
+  }
+  header #pre-main .carousel .carousel-inner .description {
+    width: 25%;
+    left: 18%;
   }
 
   #sect-1 .about {
