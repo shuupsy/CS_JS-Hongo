@@ -27,7 +27,7 @@ _Date:_ 13/06/2022 au 16/06/2022 (**4 jours**)
 
 ### Outils utilisés
 - Javascript Vanilla
-- HTML / CSS
+- HTML
 - SASS
 - Bootstrap
 
@@ -63,6 +63,6 @@ _Date:_ 13/06/2022 to 16/06/2022 (**4 days**)
 ### Tools I used
 
 - Javascript Vanilla
-- HTML / CSS
+- HTML
 - SASS
 - Bootstrap
