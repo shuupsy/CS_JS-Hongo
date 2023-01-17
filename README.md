@@ -5,7 +5,7 @@
 
 Projet final de Javascript de la Coding School à Molengeek
 
-_Date:_ 13/10/2022 au 16/06/2022 (**4 jours**)
+_Date:_ 13/06/2022 au 16/06/2022 (**4 jours**)
 
 ### A propos du projet / Consignes
 
